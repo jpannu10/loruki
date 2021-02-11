@@ -1,0 +1,274 @@
+/* Header */
+
+#header {
+    height: 70px;
+    background-color: var(--primary-color);
+}
+
+.header {
+    height: 100%;
+}
+
+#header .flex {
+    justify-content: space-between;
+}
+
+#header ul {
+    display: flex;
+}
+
+#header a {
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+#header a:hover {
+    border-bottom: 2px white solid;
+}
+
+/* Showcase*/
+
+#showcase {
+    height: 400px;
+    background-color: var(--primary-color);
+    color: white;
+    position: relative;
+}
+
+#showcase::after, #showcase::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: -70px;
+    background-color: white;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+#showcase .grid {
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .showcase-text {
+    animation: leftToRightSlide 1s ease;
+}
+
+.showcase .showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    z-index: 100;
+    color: grey;
+    animation: rightToLeftSlide 1s ease;
+}
+
+.showcase .form-control {
+    margin: 30px 0;
+}
+
+.showcase .form-control input {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.showcase .form-control input:focus {
+    outline: none;
+}
+
+/* Stats */
+
+#stats {
+    padding-top: 100px;
+    color: black;
+}
+
+#stats .slide {
+    animation: bottomToTopSlide 2s ease;
+}
+
+.stats .stats-heading {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.stats .grid h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stats .grid p.text-secondary {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* Cli */
+
+#cli .grid {
+    grid-template-columns: repeat( 3, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+#cli .grid>*:first-child {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+/* Cloud */
+
+#cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+/* Languages*/
+
+#languages .flex {
+    flex-wrap: wrap;
+}
+
+#languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+    transition: .4s ease-in-out transform;
+}
+
+#languages .card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#languages .card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+/*            Features                 */
+
+/* Head */
+
+#features-head {}
+
+#features-head img, #docs-head img {
+    justify-self: flex-end;
+    width: 200px;
+}
+
+#features-head-sub img {
+    justify-self: flex-end;
+    width: 250px;
+}
+
+/* Features */
+
+#features-main .grid {
+    padding: 30px
+}
+
+#features-main .card>i {
+    margin-right: 20px;
+}
+
+#features-main .card:first-of-type {
+    grid-column: 1 / span 3;
+}
+
+#features-main .card:nth-of-type(2) {
+    grid-column: 1 / span 2;
+}
+
+/* Docs */
+
+#docs-main .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+
+#docs-main a {
+    color: black;
+}
+
+#docs-main nav li {
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+#docs-main nav li a:hover {
+    font-weight: bold;
+}
+
+pre {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 6px;
+}
+
+/* Footer */
+
+#footer {
+    color: white;
+}
+
+#footer .social-media a {
+    margin: 0 10px;
+}
+
+/* Animation */
+
+@keyframes leftToRightSlide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightToLeftSlide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bottomToTopSlide {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes topToBottomSlide {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
