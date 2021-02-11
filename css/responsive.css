@@ -54,4 +54,7 @@
         padding-left: 0;
         background-color: rgba(0, 0, 0, .2);
     }
+    #showcase .showcase-form {
+    width : 300px
+    }
 }
