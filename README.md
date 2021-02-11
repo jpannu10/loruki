@@ -1,5 +1,5 @@
-# Lokuri Website
+# Needs to be fixed : 
+> Links for all the Images need to be fixed.
+> Responsiveness needs to be fixed on Cell phones ( width taking wider than it's suppose to ).
+> "Home" Link needs to be fixed.
 
-> Fake cloud hosting website used in this [YouTube tutorial](https://www.youtube.com/watch?v=p0bGHP-PXD4)
-
-> Fake cloud hosting website [Live Preview](https://zen-carson-c10c9f.netlify.app)
